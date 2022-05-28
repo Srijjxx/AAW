@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>main page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+</head>
+<body class="w3-light-grey">
+    
+        
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><b><i class="w3-margin-right"></i>aaw</b></a>
+  <li class="nav-link"><a  href="/signout"  class="w3-bar-item w3-button w3-right w3-hover-black w3-text-grey" class="w3-margin-left">SignOut</a></li>
+</div>
+{% if user.is_authenticated %}
+        <h3>Hello {{fname}}!</h3>             
+{% endif %} 
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+        <div class="w3-container">
+            <h2>Choose a query which matches your requirement</h2>
+            <p>Click on a query</p>
+            <p>(to access any of the reports it is mandatory to have a microsoft bi account)</p>
+          
+            <div class="w3-bar w3-light-grey">
+              <div class="w3-dropdown-hover">
+                <button class="w3-button">Dropdown</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="https://app.powerbi.com/groups/me/reports/269814c8-6f23-40c6-853c-f099d2ed1618/ReportSection30a1f32cc6f226647e06" class="w3-bar-item w3-button">1.	Car Models Vs Length Vs Sales by model.</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/aacf9854-dcde-413f-a078-e2f1278a77f5/ReportSection" class="w3-bar-item w3-button">2.	Manufacturer vs No of models</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/766cfed2-11c9-4046-ad2f-f6c839d23a2a/ReportSection" class="w3-bar-item w3-button">3.	Resale Value vs manufacturer</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/4fdfc670-c012-45b8-a053-3ca3a35ce0b3/ReportSection" class="w3-bar-item w3-button">4.	Model vs Fuel capacity vs Fuel efficiency </a>
+                  <a href="https://app.powerbi.com/groups/me/reports/825c044f-3aa3-47dc-a8e0-19d88772fae0/ReportSection" class="w3-bar-item w3-button">5.	Model vs engine size vs horsepower</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/48133db2-82f5-457b-b5bc-ff186e0c962d/ReportSection" class="w3-bar-item w3-button">6.	Vehicle type vs sales</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/1b85241b-b6a7-46bd-b096-a53466bf4a5a/ReportSection" class="w3-bar-item w3-button">7.	Vehicle type vs resale value</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/64fd2f46-ff24-4fc8-91cd-5477929934d8/ReportSection" class="w3-bar-item w3-button">8.	Wheel base vs price</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/749b2bed-24a7-4e3a-aa75-e9c6a8887795/ReportSection" class="w3-bar-item w3-button">9.	Manufacturer vs Price</a>
+                  <a href="https://app.powerbi.com/groups/me/reports/b8599711-faaa-4963-8f5e-3e3add32ce46/ReportSection" class="w3-bar-item w3-button">10.	Model vs Curb weight</a>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+    </div>
+
+    
+  </div>
+</header>
+
+
+
+
+
+
+</body>
+</html>
+
